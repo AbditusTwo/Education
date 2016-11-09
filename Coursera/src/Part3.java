@@ -30,7 +30,7 @@ public class Part3 {
     }
 
     public void testing() {
-        String myString = "A story by Abby Long";
+        String myString = "A story by Abby Long!";
         String giveMeString = twoOccurrences("by",myString);
         System.out.println("Given string is " + myString);
         System.out.println("Two times occurrence: " + giveMeString);
