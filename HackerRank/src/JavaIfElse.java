@@ -13,8 +13,8 @@ public class JavaIfElse {
             ans = "Weird";
         }
         else{
-            if () {
-
+            if (n%2==1) {
+                System.out.println("Hi");
             }
         }
         System.out.println(ans);
