@@ -9,7 +9,7 @@ public class FileChooser {
         "JPG & GIF Images", "jpg", "gif");
         chooser.setFileFilter(filter);
 
-        int returnVal = chooser.showOpenDialog(chooser);
+        int returnValue = chooser.showOpenDialog(chooser);
 
         try (BufferedReader br = new BufferedReader(new FileReader(chooser.getSelectedFile().getAbsolutePath()));
              BufferedWriter bw = new BufferedWriter(new FileWriter(chooser.getCurrentDirectory() + "\\myfile.txt"))
@@ -17,7 +17,7 @@ public class FileChooser {
 
             String sCurrentString;
 
-            if (returnVal == JFileChooser.APPROVE_OPTION) {
+            if (returnValue == JFileChooser.APPROVE_OPTION) {
                 System.out.println("You chose to open this file: " + chooser.getSelectedFile().getName());
 
                 while ((sCurrentString = br.readLine()) != null) {
