@@ -21,6 +21,12 @@ public class FileChooser {
                 System.out.println("You chose to open this file: " + chooser.getSelectedFile().getName());
 
                 while ((sCurrentString = br.readLine()) != null) {
+                    if (sCurrentString.contains("Something")) {
+                        String sConverted = sCurrentString.replace("What_to_replace", "on_what_to_replace" );
+                        bw.write(sConverted + "\n");
+                        //Debug:
+                        System.out.println(sConverted);
+                    }
                     //Do something
                 }
             }
