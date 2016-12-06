@@ -45,19 +45,40 @@ public class FileChooser {
                     String firstWordPeek = firstWordsStack.peek().toString();
 
 
-                    //If trimmed first word is more than 0 (actually a word)
-                    if ((firstWordPeek.trim().length() > 0) && ((!sCurrentString.contains("/")))) {
+                    //If trimmed first word is more than 0 (actually a word) and word or string doesn't contain closeTag
+                    if ((firstWordPeek.trim().length() > 0) && (!sCurrentString.contains(closeTag))) {
                         bw.write(sCurrentString + "\n");
                     }
 
+                    if ((firstWordPeek.trim().length() > 0) && (firstWordPeek.trim().contains(closeTag))) {
+                        String sConverted = sCurrentString.replace(closeTag, closeTag + firstWordPeek);
+                        firstWordsStack.pop();
+                        bw.write(sConverted + "\n");
+                    }
+
+
+                    //if (firstWordPeek.contains(closeTag)){
+                    //    firstWordsStack.pop();
+                   //     bw.write(sCurrentString + "\n");
+                   // }
 
 
 
-                        if (((sCurrentString.contains(closeTag))) && (!sCurrentString.contains("/"+ firstWordPeek + ">"))){
-                            String sConverted = sCurrentString.replace(closeTag, "/" + firstWordPeek);
-                            firstWordsStack.pop();
-                            bw.write(sConverted + "\n");
-                        }
+                  //  if ((sCurrentString.contains(closeTag))) {
+                  //      if (!sCurrentString.contains(closeTag + firstWordPeek + ">")) {
+                  //          String sConverted = sCurrentString.replace(closeTag, closeTag + firstWordPeek);
+                  //          firstWordsStack.pop();
+                  //          bw.write(sConverted + "\n");
+                  //      }
+
+                //    }
+
+
+                       // if (((sCurrentString.contains(closeTag))) && (!sCurrentString.contains("/"+ firstWordPeek + ">"))){
+                       //     String sConverted = sCurrentString.replace(closeTag, "/" + firstWordPeek);
+                       //     firstWordsStack.pop();
+                       //     bw.write(sConverted + "\n");
+                       // }
                     }
                 }
             }
