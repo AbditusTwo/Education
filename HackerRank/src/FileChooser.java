@@ -46,11 +46,11 @@ public class FileChooser {
 
 
                     //If trimmed first word is more than 0 (actually a word) and word or string doesn't contain closeTag
-                    if ((firstWordPeek.trim().length() > 0) && (!sCurrentString.contains(closeTag))) {
+                    if ((firstWordPeek.length() > 0) && (!sCurrentString.contains(closeTag))) {
                         bw.write(sCurrentString + "\n");
                     }
 
-                    if ((firstWordPeek.trim().length() > 0) && (firstWordPeek.trim().contains(closeTag))) {
+                    if ((firstWordPeek.length() > 0) && (firstWordPeek.contains(closeTag))) {
                         String sConverted = sCurrentString.replace(closeTag, closeTag + firstWordPeek);
                         firstWordsStack.pop();
                         bw.write(sConverted + "\n");

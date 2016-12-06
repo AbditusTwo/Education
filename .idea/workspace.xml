@@ -70,8 +70,8 @@
       <file leaf-file-name="FileChooser.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HackerRank/src/FileChooser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state relative-caret-position="213">
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -752,7 +752,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481029131624</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="New brabch for develop stack operations. #2">
+      <created>1481034084678</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1481034084678</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -808,7 +815,8 @@
     <MESSAGE value="Adding Stack resolution" />
     <MESSAGE value="Adding Stack resolution&#10;Some optimisation require" />
     <MESSAGE value="New brabch for develop stack operations." />
-    <option name="LAST_COMMIT_MESSAGE" value="New brabch for develop stack operations." />
+    <MESSAGE value="New brabch for develop stack operations. #2" />
+    <option name="LAST_COMMIT_MESSAGE" value="New brabch for develop stack operations. #2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -832,10 +840,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481034044657" expanded="true" signature="59:56641" ph="..." />
-            <marker date="1481034044657" expanded="true" signature="98:191" ph="..." />
-            <marker date="1481034044657" expanded="true" signature="56567:56615" ph="..." />
-            <marker date="1481034044657" expanded="true" signature="56567:56630" ph="..." />
+            <marker date="1481034372384" expanded="true" signature="59:57033" ph="..." />
+            <marker date="1481034372384" expanded="true" signature="98:191" ph="..." />
+            <marker date="1481034372384" expanded="true" signature="56959:57007" ph="..." />
+            <marker date="1481034372384" expanded="true" signature="56959:57022" ph="..." />
           </folding>
         </state>
       </provider>
@@ -898,10 +906,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481034044657" expanded="true" signature="59:56641" ph="..." />
-            <marker date="1481034044657" expanded="true" signature="98:191" ph="..." />
-            <marker date="1481034044657" expanded="true" signature="56567:56615" ph="..." />
-            <marker date="1481034044657" expanded="true" signature="56567:56630" ph="..." />
+            <marker date="1481034372384" expanded="true" signature="59:57033" ph="..." />
+            <marker date="1481034372384" expanded="true" signature="98:191" ph="..." />
+            <marker date="1481034372384" expanded="true" signature="56959:57007" ph="..." />
+            <marker date="1481034372384" expanded="true" signature="56959:57022" ph="..." />
           </folding>
         </state>
       </provider>
@@ -964,10 +972,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481034044657" expanded="true" signature="59:56641" ph="..." />
-            <marker date="1481034044657" expanded="true" signature="98:191" ph="..." />
-            <marker date="1481034044657" expanded="true" signature="56567:56615" ph="..." />
-            <marker date="1481034044657" expanded="true" signature="56567:56630" ph="..." />
+            <marker date="1481034372384" expanded="true" signature="59:57033" ph="..." />
+            <marker date="1481034372384" expanded="true" signature="98:191" ph="..." />
+            <marker date="1481034372384" expanded="true" signature="56959:57007" ph="..." />
+            <marker date="1481034372384" expanded="true" signature="56959:57022" ph="..." />
           </folding>
         </state>
       </provider>
@@ -996,10 +1004,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481034044657" expanded="true" signature="59:56641" ph="..." />
-            <marker date="1481034044657" expanded="true" signature="98:191" ph="..." />
-            <marker date="1481034044657" expanded="true" signature="56567:56615" ph="..." />
-            <marker date="1481034044657" expanded="true" signature="56567:56630" ph="..." />
+            <marker date="1481034372384" expanded="true" signature="59:57033" ph="..." />
+            <marker date="1481034372384" expanded="true" signature="98:191" ph="..." />
+            <marker date="1481034372384" expanded="true" signature="56959:57007" ph="..." />
+            <marker date="1481034372384" expanded="true" signature="56959:57022" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1096,8 +1104,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HackerRank/src/FileChooser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state relative-caret-position="213">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
