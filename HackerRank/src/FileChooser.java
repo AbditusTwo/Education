@@ -13,10 +13,10 @@ import java.util.Stack;
  */
 
 public class FileChooser {
-    public static void main (String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
         JFileChooser chooser = new JFileChooser();
         FileNameExtensionFilter filter = new FileNameExtensionFilter(
-        "TXT files", "txt");
+                "TXT files", "txt");
         chooser.setFileFilter(filter);
 
         int returnValue = chooser.showOpenDialog(chooser);
@@ -27,7 +27,7 @@ public class FileChooser {
 
             String sCurrentString;
             Stack firstWordsStack = new Stack();
-            String closeTag = " />";
+            String closeTag = "/";
 
             if (returnValue == JFileChooser.APPROVE_OPTION) {
                 System.out.println("You chose to open this file: " + chooser.getSelectedFile().getName());
@@ -37,26 +37,60 @@ public class FileChooser {
                     String firstWord = arr[0];
                     //firstWordsStack.push(firstWord.substring(1));
                     firstWordsStack.push(firstWord.trim().substring(1));
+
                     //Debug:
                     System.out.println(firstWordsStack);
                     //System.out.println(sCurrentString);
 
-                    if (sCurrentString.contains("/" + firstWordsStack.peek().toString())) {
-                        //Debug:
-                        //System.out.println(sCurrentString);
+                    String firstWordPeek = firstWordsStack.peek().toString();
 
-                        firstWordsStack.pop();
-                    } else {
-                        if (sCurrentString.contains(firstWordsStack.peek().toString())) {
-                            String sConverted = sCurrentString.replace(closeTag, "/" + firstWordsStack.pop().toString() + ">");
-                            bw.write(sConverted + "\n");
-                            //Debug:
-                            //System.out.println(sConverted);
+
+                    //If trimmed first word is more than 0 (actually a word)
+                    if (firstWordPeek.trim().length() > 0) {
+
+
+
+
+
+
+
+                        if ((sCurrentString.contains("/" + firstWordPeek))) {
+                            firstWordsStack.pop();
+                            bw.write(sCurrentString + "\n");
                         }
+
+
+
+                        if (((sCurrentString.contains(closeTag))) && (!sCurrentString.contains("/"+ firstWordPeek + ">"))){
+                            String sConverted = sCurrentString.replace(closeTag, "/" + firstWordPeek);
+                            firstWordsStack.pop();
+                            bw.write(sConverted + "\n");
+                        }
+
+
+
+
+                    } else {
+                        firstWordsStack.pop();
+                        bw.write(sCurrentString + "\n");
                     }
-                    //Do something
                 }
             }
         }
     }
 }
+
+// if (sCurrentString.contains("/" + firstWordsStack.peek().toString())) {
+//Debug:
+//System.out.println(sCurrentString);
+
+//   firstWordsStack.pop();
+// } else {
+//   if (sCurrentString.contains(firstWordsStack.peek().toString())) {
+// String sConverted = sCurrentString.replace(closeTag, "/" + firstWordsStack.pop().toString() + ">");
+//  bw.write(sConverted + "\n");
+//Debug:
+//System.out.println(sConverted);
+// }
+//}
+//Do something
