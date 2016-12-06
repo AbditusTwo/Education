@@ -46,18 +46,10 @@ public class FileChooser {
 
 
                     //If trimmed first word is more than 0 (actually a word)
-                    if (firstWordPeek.trim().length() > 0) {
+                    if ((firstWordPeek.trim().length() > 0) && ((!sCurrentString.contains("/")))) {
+                        bw.write(sCurrentString + "\n");
+                    }
 
-
-
-
-
-
-
-                        if ((sCurrentString.contains("/" + firstWordPeek))) {
-                            firstWordsStack.pop();
-                            bw.write(sCurrentString + "\n");
-                        }
 
 
 
@@ -66,19 +58,12 @@ public class FileChooser {
                             firstWordsStack.pop();
                             bw.write(sConverted + "\n");
                         }
-
-
-
-
-                    } else {
-                        firstWordsStack.pop();
-                        bw.write(sCurrentString + "\n");
                     }
                 }
             }
         }
     }
-}
+
 
 // if (sCurrentString.contains("/" + firstWordsStack.peek().toString())) {
 //Debug:
