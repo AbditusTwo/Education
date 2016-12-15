@@ -7,7 +7,7 @@ import java.util.Stack;
 * Select the first tag and continue searching for close tag
 * If ne open tag detected, than count it as the next closure tag
 * String mystring = "the quick brown fox";
-* String arr[] = mystring.split(" ", 2);
+* String arr[] = mystring.sp
 * String firstWord = arr[0];   //the
 * String theRest = arr[1];     //quick brown fox
 */
