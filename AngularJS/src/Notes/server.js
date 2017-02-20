@@ -1,9 +1,8 @@
 var express = require('express');
 var path = require('path');
-
 var session = require('express-session');
 var bodyParser = require('body-parser');
-
+var MongoStore = require('connect-mongo/ec5')(session);
 var app = express();
 
 
@@ -19,12 +18,19 @@ app.use(bodyParser.urlencoded (
 app.use(
     session(
         {
+            store: new MongoStore(
+                {
+                    url: "mongodb://localhost:27017/angular_session"
+                }
+            ),
             secret: "angular_tutorial",
             resave: true,
             saveUninitialized: true
         }
     )
 );
+
+require('./notes')(app);
 
 app.get('/notes', function (req, res) {
 
