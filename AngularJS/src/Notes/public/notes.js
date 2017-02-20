@@ -10,5 +10,7 @@ module.controller("NotesController", function ($scope, $http) {
             });
         }
 
+
+
         update();
     });
