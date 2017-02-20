@@ -2,7 +2,7 @@ var express = require('express');
 var path = require('path');
 var session = require('express-session');
 var bodyParser = require('body-parser');
-var MongoStore = require('connect-mongo/ec5')(session);
+var MongoStore = require('connect-mongo/es5')(session);
 var app = express();
 
 
@@ -29,8 +29,6 @@ app.use(
         }
     )
 );
-
-require('./notes')(app);
 
 app.get('/notes', function (req, res) {
 
