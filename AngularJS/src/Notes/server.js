@@ -27,13 +27,24 @@ app.use(
 );
 
 app.get('/notes', function (req, res) {
-    var notes = [
-        {text: "first note"},
-        {text: "second node"},
-        {text: "third note"}
-    ];
 
-    res.send(notes);
-});
+    res.send(req.session.notes || []);
+    });
+
+app.post(
+    "/notes",
+    function(req, res) {
+    if(!req.session.notes){
+    req.session.notes = [];
+    req.session.last_note_id = 0;
+    }
+
+    var note = req.body;
+    note.id = req.session.last_note_id;
+    req.session.last_note_id++;
+    req.session.notes.push(note);
+    req.end();
+    }
+);
 
 app.listen(3000);
