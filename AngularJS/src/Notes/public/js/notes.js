@@ -59,7 +59,7 @@ module.controller("NotesController", function ($scope, $http) {
     var readSections = function () {
         $http.get("/sections")
             .then(function (sections) {
-                $scope.sections = sections;
+                $scope.sections = sections.data;
                 if ($scope.activeSection == null && $scope.sections.length > 0) {
                     $scope.activeSection = $scope.sections[0].title;
                 }

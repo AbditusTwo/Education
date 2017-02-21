@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="14f2abe7-ff97-4db0-b00a-13a7708bfdaa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AngularJS/src/Notes/mongo-examples.js" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/mongo-examples.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AngularJS/src/Notes/notes.js" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/notes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AngularJS/src/Notes/public/js/notes.js" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/js/notes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AngularJS/src/Notes/server.js" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/server.js" />
     </list>
     <ignored path="Education.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,21 +64,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AngularJS/src/Notes/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="-56">
+              <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notes.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="notes.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AngularJS/src/Notes/public/js/notes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="435">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -173,10 +170,10 @@
         <option value="$PROJECT_DIR$/AngularJS/src/Notes/package.json" />
         <option value="$PROJECT_DIR$/AngularJS/src/Notes/public/notes.js" />
         <option value="$PROJECT_DIR$/AngularJS/src/Notes/public/styles.css" />
-        <option value="$PROJECT_DIR$/AngularJS/src/Notes/public/js/notes.js" />
         <option value="$PROJECT_DIR$/AngularJS/src/Notes/mongo-examples.js" />
         <option value="$PROJECT_DIR$/AngularJS/src/Notes/notes.js" />
         <option value="$PROJECT_DIR$/AngularJS/src/Notes/server.js" />
+        <option value="$PROJECT_DIR$/AngularJS/src/Notes/public/js/notes.js" />
       </list>
     </option>
   </component>
@@ -907,7 +904,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487671394342</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Notes app again">
+      <created>1487672406917</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1487672406917</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1324,14 +1328,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AngularJS/src/Notes/public/js/notes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AngularJS/src/Notes/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-845">
@@ -1349,14 +1345,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AngularJS/src/Notes/mongo-examples.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularJS/src/Notes/notes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1382,8 +1370,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AngularJS/src/Notes/server.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-56">
+          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/src/Notes/notes.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/src/Notes/public/js/notes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
