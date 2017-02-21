@@ -1,7 +1,3 @@
-/**
- * Created by koziolek on 16.02.17.
- */
-
 // use tutor;
 
 db.notes.find();

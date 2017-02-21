@@ -1,6 +1,3 @@
-/**
- * Created by BKuczynski on 2017-01-26.
- */
 var ObjectID = require('mongodb').ObjectID;
 
 module.exports = function (app, db) {
