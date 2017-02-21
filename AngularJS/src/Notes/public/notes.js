@@ -8,20 +8,50 @@ module.controller("NotesController", function ($scope, $http) {
             .then(function (res) {
                 $scope.notes = res.data;
             });
+    };
+
+    $scope.add = function () {
+        var note = {
+            text: $scope.text
         };
 
-        $scope.add = function () {
-            var note = {
-                text: $scope.text
-            };
-            $http.post("/notes", note)
-                .then (
+        $http.post("/notes", note)
+            .then(
                 function () {
                     $scope.text = "";
                     update();
                 }
             );
+    };
+
+    $scope.remove = function (id) {
+        var note = {
+            params: {
+                id: id
+            }
         };
 
-        update();
-    });
+        $http.delete("/notes", {params: {id: id}})
+            .then(
+                function () {
+                    update();
+                }
+            );
+    };
+
+    $scope.top = function (id) {
+        var note = {
+            id: id
+        }
+
+        $http.put("/notes", note)
+            .then(
+                function () {
+                    update();
+                }
+            );
+    };
+
+
+    update();
+});

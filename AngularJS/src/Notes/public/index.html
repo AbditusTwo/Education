@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="notesApp">
-
     <head>
         <title>Notes application</title>
 
-            <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="styles.css" />
 
-            <script src="angular.js"></script>
-            <script src="notes.js"></script>
+        <script src="angular.js"></script>
+        <script src="notes.js"></script>
     </head>
 
     <body ng-controller="NotesController">
@@ -19,6 +18,8 @@
 
         <div ng-repeat="note in notes">
             <p class="note">{{note.text}}</p>
+            <button ng-click="remove(note._id)">Remove</button>
+            <button ng-click="top(note.id)">To top</button>
         </div>
 
     </body>
