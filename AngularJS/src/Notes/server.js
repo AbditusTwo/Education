@@ -2,8 +2,12 @@ var express = require('express');
 var path = require('path');
 var session = require('express-session');
 var bodyParser = require('body-parser');
-var MongoStore = require('connect-mongo/es5')(session);
-var app = express();
+
+var fs = require('fs');
+var Db = require('mongodb');
+var Server = require ('mongodb').Server;
+
+var db = ne Db('tutor')
 
 
 app.use(express.static(path.join(__dirname, 'public')));
