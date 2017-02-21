@@ -81,7 +81,7 @@
                 <li href="#" class="list-group-item"
                     dnd-draggable="section"
                     dnd-moved="sections.splice($index, 1); writeSections();"
-                    ng-repeat="section in sections"
+                    ng-repeat="section in sections | filter sectionsFilter"
                     ng-click="showSection(section)"
                     ng-class="{active: section.title==activeSection}">
                     {{section.title}}
