@@ -1,3 +1,7 @@
+/**
+ * Created by koziolek on 22.01.17.
+ */
+
 var express = require('express');
 
 var path = require('path');
@@ -15,6 +19,9 @@ db.open(function () {
     console.log("mongo db is open");
     db.collection("notes", function (err, notes) {
         db.notes = notes;
+    });
+    db.collection("sections", function (err, sections) {
+        db.sections = sections;
     });
 });
 
@@ -40,6 +47,7 @@ app.use(
 );
 
 require('./notes')(app, db);
+require('./section')(app, db);
 
 
 app.listen(3000);

@@ -1,3 +1,7 @@
+/**
+ * Created by koziolek on 16.02.17.
+ */
+
 // use tutor;
 
 db.notes.find();
@@ -22,3 +26,10 @@ db.notes.remove({text: "My note"});
 db.notes.drop();
 
 db.notes.update({}, {$unset: {lastUpdate: ""}}, {multi: true});
+
+db.sections.insert({title:"Work"});
+db.sections.insert({title:"Vacations"});
+db.sections.insert({title:"Children"});
+
+db.notes.update({}, {$set: {section:"Old notes" }}, {multi:true});
+db.sections.insert({title:"Old notes"});
