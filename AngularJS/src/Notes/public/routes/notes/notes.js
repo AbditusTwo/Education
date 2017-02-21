@@ -1,7 +1,3 @@
-/**
- * Created by BKuczynski on 2017-01-20.
- */
-
 var module = angular.module("notesApp", ['dndLists', 'ngRoute']);
 
 module.config(function ($routeProvider) {
