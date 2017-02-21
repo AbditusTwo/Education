@@ -1,6 +1,18 @@
-var module = angular.module("notesApp", ['dndLists']);
+/**
+ * Created by BKuczynski on 2017-01-20.
+ */
 
-module.controller("NotesController", function ($scope, $http, $filter) {
+var module = angular.module("notesApp", ['dndLists', 'ngRoute']);
+
+module.config(function ($routeProvider) {
+    $routeProvider.when('/', {
+            templateUrl: 'routes/notes/notes.html',
+            controller: 'NotesController'
+        }
+    ).otherwise({redirectTo: '/'});
+});
+
+module.controller("NotesController", function ($scope, $http, $routeParams, $location) {
     $scope.notes = [];
 
     var update = function () {
@@ -10,6 +22,8 @@ module.controller("NotesController", function ($scope, $http, $filter) {
                 $scope.notes = res.data;
             });
     };
+
+    $scope.activeSection = $routeParams.section;
 
     $scope.add = function () {
         var note = {
@@ -58,8 +72,8 @@ module.controller("NotesController", function ($scope, $http, $filter) {
 
     var readSections = function () {
         $http.get("/sections")
-            .then(function (sections) {
-                $scope.sections = sections.data;
+            .then(function (res) {
+                $scope.sections = res.data;
                 if ($scope.activeSection == null && $scope.sections.length > 0) {
                     $scope.activeSection = $scope.sections[0].title;
                 }
@@ -68,6 +82,7 @@ module.controller("NotesController", function ($scope, $http, $filter) {
 
     $scope.showSection = function (section) {
         $scope.activeSection = section.title;
+        $location.path(section.title);
         update();
     };
 
