@@ -1,7 +1,3 @@
-/**
- * Created by koziolek on 18.02.17.
- */
-
 module.directive("matchTo", function () {
     return {
         require: "ngModel",
