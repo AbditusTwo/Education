@@ -4,6 +4,7 @@ module.exports = function (app, db) {
     var module = {};
 
     app.get("/notes", function (req, res) {
+            app.setUserQuery(req);
             db.notes.find(req.query).toArray(function (err, items) {
                 res.send(items);
             });
@@ -13,6 +14,7 @@ module.exports = function (app, db) {
 
     app.post("/notes", function (req, res) {
             var note = req.body;
+            app.setUserQuery(req);
             db.notes.insert(note);
             res.send();
 
@@ -23,7 +25,7 @@ module.exports = function (app, db) {
     app.delete("/notes", function (req, res) {
             var id = new ObjectID(req.query.id);
             db.notes.remove({_id: id}, function (err) {
-                if(err){
+                if (err) {
                     console.log("err")
                     res.send("Failed");
                 } else {

@@ -2,22 +2,18 @@ module.exports = function (app, db) {
     var module = {};
 
     app.get("/sections", function (req, res) {
-        db.sections.find(req.query).toArray(function (err, items) {
-            res.send(items);
+        var username = app.setUserQuery(req);
+        db.sections.find({userName: username}).toArray(function (err, items) {
+            var user = items[0];
+            res.send(user.sections);
         });
     });
 
     app.post("/sections/replace", function (req, resp) {
         // do not clear the list
-        if (req.body.length == 0) {
+        var username = app.setUserQuery(req);
+        db.users.update({userName: username}, {$set: {sections: req.body}}, function () {
             resp.end();
-        }
-        db.sections.remove({}, function (err, res) {
-            if (err) console.log(err);
-            db.sections.insert(req.body, function (err, res) {
-                if (err) console.log("err after insert", err);
-                resp.end();
-            });
         });
     });
 

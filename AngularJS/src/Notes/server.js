@@ -1,3 +1,7 @@
+/**
+ * Created by koziolek on 22.01.17.
+ */
+
 var express = require('express');
 
 var path = require('path');
@@ -47,9 +51,24 @@ app.use(
     )
 );
 
+/*
+    User {
+        userName: "String",
+        password: "String",
+        sections: ["String"],
+    }
+
+ */
+
+app.setUserQuery = function(req){
+  req.query.userName = req.query.userName || "demo";
+  return req.query.userName;
+};
+
 require('./notes')(app, db);
 require('./section')(app, db);
 require('./user')(app, db);
+require('./login')(app, db);
 
 
 app.listen(3000);

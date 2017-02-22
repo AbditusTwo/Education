@@ -8,29 +8,38 @@
     <script src="js/angular.js"></script>
     <script src="js/angular-drag-and-drop-lists.js"></script>
     <script src="js/angular-route.min.js"></script>
-    <script src="js/moment.js"></script>
     <script src="routes/notes/notes.js"></script>
     <script src="routes/userForm/userForm.js"></script>
+    <script src="routes/login/userService.js"></script>
+    <script src="routes/login/loginController.js"></script>
     <script src="routes/routes.js"></script>
 </head>
 
 <body ng-controller="NotesController">
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-inverse navbar-fixed-top" ng-controller="LoginController">
     <div class="container">
         <div class="navbar-header">
             <div class="navbar-brand">Notes tutorial app</div>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-            <form class="navbar-form navbar-right">
+            <form class="navbar-form navbar-right" ng-show="!loggedIn" ng-submit="login()">
                 <div class="form-group">
-                    <input type="text" placeholder="Username" class="form-control">
+                    <input type="text" placeholder="Username" class="form-control" ng-model="username">
                 </div>
                 <div class="form-group">
-                    <input type="password" placeholder="Password" class="form-control">
+                    <input type="password" placeholder="Password" class="form-control" ng-model="password">
                 </div>
                 <a class="btn btn-primary" ng-href="#!/register">Register</a>
                 <button type="submit" class="btn btn-success">Sign in</button>
             </form>
+            <div ng-show="wrongPassword" class="text-warning">
+                Wrong username or password
+            </div>
+            <<div ng-show="loggedIn" class="text-primary">
+                User: {{userName}}
+            <button class="btn btn-primary" ng-click="logout()">Logout</button>
+            </div>
+            <
         </div><!--/.navbar-collapse -->
     </div>
 </nav>

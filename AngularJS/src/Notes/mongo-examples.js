@@ -23,9 +23,20 @@ db.notes.drop();
 
 db.notes.update({}, {$unset: {lastUpdate: ""}}, {multi: true});
 
-db.sections.insert({title:"Work"});
-db.sections.insert({title:"Vacations"});
-db.sections.insert({title:"Children"});
+db.sections.insert({title: "Work"});
+db.sections.insert({title: "Vacations"});
+db.sections.insert({title: "Children"});
 
-db.notes.update({}, {$set: {section:"Old notes" }}, {multi:true});
-db.sections.insert({title:"Old notes"});
+db.notes.update({}, {$set: {section: "Old notes"}}, {multi: true});
+db.sections.insert({title: "Old notes"});
+
+db.sections.update({}, {$set: {userName: "demo"}}, {multi: true});
+db.notes.update({}, {$set: {userName: "demo"}}, {multi: true});
+db.users.insert({userName: "demo", password: "demo"});
+
+
+// show collections;
+
+db.sections.find();
+db.users.find();
+db.notes.find();
