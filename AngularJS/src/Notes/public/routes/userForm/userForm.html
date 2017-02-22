@@ -8,6 +8,7 @@
                        unique-user
                        required>
                 <span ng-show="userForm.$dirty && userForm.$error.unique">User name is not unique</span>
+                <span ng-show="userForm.$dirty && userForm.$error.require">User name a must</span>
             </div>
 
             <div>
