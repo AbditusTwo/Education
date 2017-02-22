@@ -1,25 +1,53 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="notesApp">
+<head>
+    <title>Notes application</title>
 
-    <head>
-        <title>Notes application</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
 
-            <link rel="stylesheet" href="styles.css" />
+    <script src="js/angular.js"></script>
+    <script src="js/angular-drag-and-drop-lists.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="routes/notes/notes.js"></script>
+    <script src="routes/userForm/userForm.js"></script>
+    <script src="routes/routes.js"></script>
+</head>
 
-            <script src="angular.js"></script>
-            <script src="notes.js"></script>
-    </head>
-
-    <body ng-controller="NotesController">
-
-        <div>
-            <textarea rows="10" cols="50" ng-model="text"></textarea>
-            <button ng-click="add()">Add note</button>
+<body ng-controller="NotesController">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <div class="navbar-brand">Notes tutorial app</div>
         </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" placeholder="Username" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" class="form-control">
+                </div>
+                <a class="btn btn-primary" ng-href="#!/register">Register</a>
+                <button type="submit" class="btn btn-success">Sign in</button>
+            </form>
+        </div><!--/.navbar-collapse -->
+    </div>
+</nav>
 
-        <div ng-repeat="note in notes">
-            <p class="note">{{note.text}}</p>
-        </div>
+<div class="jumbotron">
+    <div class="container">
+        <h2>
+            <span class="glyphicon glyphicon-edit"></span>
+            Keep your notes in order
+        </h2>
+        <p>
+            A simple application to keep your own notes in order.
+        </p>
+    </div>
+</div>
 
-    </body>
+<div class="container" ng-view="">
+
+</div>
+</body>
 </html>

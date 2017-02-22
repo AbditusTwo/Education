@@ -1,28 +1,45 @@
 var express = require('express');
+
 var path = require('path');
 var session = require('express-session');
 var bodyParser = require('body-parser');
-var MongoStore = require('connect-mongo/es5')(session);
-var app = express();
+var fs = require('fs');
+var Db = require('mongodb').Db;
+var Server = require('mongodb').Server;
 
+var db = new Db('tutor',
+    new Server("localhost", 27017, {safe: true}, {auto_reconnect: true}, {})
+);
+
+db.open(function () {
+    console.log("mongo db is open");
+    db.collection("notes", function (err, notes) {
+        db.notes = notes;
+    });
+
+    db.collection("sections", function (err, sections) {
+        db.sections = sections;
+    });
+
+    db.collection("users", function (err, users) {
+        db.users = users;
+    });
+});
+
+var app = express();
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(bodyParser.urlencoded (
+app.use(bodyParser.urlencoded(
     {
         extended: true
     })
 );
-    app.use(bodyParser.json());
+app.use(bodyParser.json());
 
 app.use(
     session(
         {
-            store: new MongoStore(
-                {
-                    url: "mongodb://localhost:27017/angular_session"
-                }
-            ),
             secret: "angular_tutorial",
             resave: true,
             saveUninitialized: true
@@ -30,25 +47,9 @@ app.use(
     )
 );
 
-app.get('/notes', function (req, res) {
+require('./notes')(app, db);
+require('./section')(app, db);
+require('./user')(app, db);
 
-    res.send(req.session.notes || []);
-    });
-
-app.post(
-    "/notes",
-    function(req, res) {
-    if(!req.session.notes){
-    req.session.notes = [];
-    req.session.last_note_id = 0;
-    }
-
-    var note = req.body;
-    note.id = req.session.last_note_id;
-    req.session.last_note_id++;
-    req.session.notes.push(note);
-    req.end();
-    }
-);
 
 app.listen(3000);
