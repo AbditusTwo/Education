@@ -1,4 +1,4 @@
-module.factory("UserService", function ($http, $rootScope, $timeout, $q) {
+module.factory("UserService", function ($http, $timeout, $q) {
     var service = {};
 
     service.userName = "";

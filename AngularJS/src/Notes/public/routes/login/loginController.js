@@ -14,7 +14,7 @@ module.controller("LoginController", function ($scope, UserService, $location, $
     };
 
     $scope.login = function () {
-        UserService.login($scope.login, $scope.password)
+        UserService.login($scope.username, $scope.password)
             .then(successfulLogin, unsuccessfulLogin);
     };
 
