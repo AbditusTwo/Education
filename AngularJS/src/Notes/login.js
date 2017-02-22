@@ -1,6 +1,3 @@
-/**
- * Created by koziolek on 19.02.17.
- */
 module.exports = function (app, db) {
     var module = {};
 
