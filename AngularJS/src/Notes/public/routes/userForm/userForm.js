@@ -60,6 +60,26 @@ module.directive("uniqueUserAsync", function ($http, $q) {
     };
 });
 
+module.directive("adultUser", function () {
+    var timer;
+    return {
+        restrict: "A",
+        require: "ngModel",
+        link: function (scope, elem, attr, ngModel) {
+        ngModel.$validators.adultUser = function (modelValue) {
+                if (modelValue) {
+                    var yearsAgo = moment().substract(attributes.adultUser, 'year')
+                    return moment(modelValue).isBefore(yearsAgo);
+                    }
+                    else {
+                    }
+                        });
+                }, 200);
+            })
+        }
+    };
+});
+
 module.controller("UserFormController", function ($scope, $http, $location) {
     $scope.user = {};
 

@@ -8,7 +8,7 @@
                        unique-user
                        required>
                 <span ng-show="userForm.$dirty && userForm.$error.unique">User name is not unique</span>
-                <span ng-show="userForm.$dirty && userForm.$error.require">User name a must</span>
+                <span ng-show="userForm.$dirty && userForm.$error.require">User name is a must</span>
             </div>
 
             <div>
@@ -29,9 +29,13 @@
 
             <div>
                 <label for="dateOfBirth">Date of birth</label>
-                <input type="date" class="form-control" id="dateOfBirth" placeholder="Date of birth"
-                       ng-model="user.dateOfBirth" ng-pattern="/^[0-9][0-9]\.[0-1][0-9]\.[1-2][0-9][0-9][0-9]$/">
+                <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth" placeholder="Date of birth"
+                       ng-model="user.dateOfBirth" minage="12"
+                       ng-pattern="/^[0-9][0-9]\.[0-1][0-9]\.[1-2][0-9][0-9][0-9]$/"
+                       min="20.02.2005">
+
                 <span ng-show="userForm.dateOfBirth.$error.pattern">Date of Birth should be in format dd.mm.yyyy</span>
+                <span ng-show="userForm.dateOfBirth.$error.adultUser">You should be more than 12 years old to register</span>
             </div>
 
             <div class="checkbox">
