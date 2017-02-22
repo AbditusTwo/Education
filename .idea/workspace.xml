@@ -2,41 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14f2abe7-ff97-4db0-b00a-13a7708bfdaa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/bootstrap/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/bootstrap/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/mongo-examples.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/notes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/bootstrap/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/bootstrap/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/bootstrap/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/bootstrap/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/bootstrap/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/bootstrap/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/bootstrap/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/bootstrap/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/bootstrap/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/bootstrap/js/npm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/js/angular-drag-and-drop-lists.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/js/angular-route.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/js/angular.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/js/angular.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/routes/notes/notes.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/routes/notes/notes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/routes/routes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/routes/userForm/userForm.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/routes/userForm/userForm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/routes/viewSection/viewSection.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/routes/viewSection/viewSection.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/section.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/user.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJS/src/Notes/public/angular.js" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/js/angular.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AngularJS/src/Notes/package.json" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AngularJS/src/Notes/public/index.html" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AngularJS/src/Notes/public/styles.css" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AngularJS/src/Notes/server.js" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AngularJS/src/Notes/public/routes/userForm/userForm.html" afterPath="$PROJECT_DIR$/AngularJS/src/Notes/public/routes/userForm/userForm.html" />
     </list>
     <ignored path="Education.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,16 +24,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="notes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AngularJS/src/Notes/public/notes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="section.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AngularJS/src/Notes/section.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -87,11 +44,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AngularJS/src/Notes/user.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AngularJS/src/Notes/public/routes/routes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userForm.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AngularJS/src/Notes/public/routes/userForm/userForm.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="531">
+              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -119,16 +96,6 @@
       </file>
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AngularJS/src/Notes/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="angular.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AngularJS/src/Notes/public/js/angular.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -200,6 +167,7 @@
         <option value="$PROJECT_DIR$/AngularJS/src/Notes/notes.js" />
         <option value="$PROJECT_DIR$/AngularJS/src/Notes/server.js" />
         <option value="$PROJECT_DIR$/AngularJS/src/Notes/user.js" />
+        <option value="$PROJECT_DIR$/AngularJS/src/Notes/public/routes/userForm/userForm.html" />
       </list>
     </option>
   </component>
@@ -370,6 +338,70 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Education" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Education" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AngularJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Notes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Education" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Education" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AngularJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Notes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="userForm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -878,7 +910,14 @@
       <option name="project" value="LOCAL" />
       <updated>1482943591526</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Angular Task 10">
+      <created>1487753849218</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1487753849218</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -941,7 +980,8 @@
     <MESSAGE value="New brabch for develop stack operations. #2" />
     <MESSAGE value="Done with Stack implementation." />
     <MESSAGE value="Learning Robot stuff." />
-    <option name="LAST_COMMIT_MESSAGE" value="Learning Robot stuff." />
+    <MESSAGE value="Angular Task 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="Angular Task 10" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -960,20 +1000,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HackerRank/src/JavaIfElse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HackerRank/src/JavaLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HackerRank/src/JavaLoopTwo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -1348,6 +1374,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/src/Notes/public/routes/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularJS/src/Notes/public/routes/userForm/userForm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding />
         </state>
       </provider>
